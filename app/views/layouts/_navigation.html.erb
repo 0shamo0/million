@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+    <%= link_to "Mes contacts", contacts_path %> | 
+    <%= link_to "Mes prestations",  prestations_path %> | 
+    <%= link_to "Plannification", plannifications_path %> | 
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete %> |
+<% else %>
+    <%= link_to "connexion", user_session_path %> | 
+    <%= link_to "création de compte", new_user_registration_path %>
+<% end %>

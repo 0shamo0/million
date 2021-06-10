@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @plannification.date %>
+</p>
+
+<p>
+  <strong>Localisation:</strong>
+  <%= @plannification.localisation %>
+</p>
+
+<p>
+  <strong>Etat:</strong>
+  <%= @plannification.etat %>
+</p>
+
+<p>
+  <strong>Prestation id:</strong>
+  <%= @plannification.prestation_id %>
+</p>
+
+<%= link_to 'Edit', edit_plannification_path(@plannification) %> |
+<%= link_to 'Back', plannifications_path %>
